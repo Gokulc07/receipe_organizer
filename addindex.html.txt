@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Recipe</title>
+    <link rel="stylesheet" href="#">
+</head>
+<body>
+    <h1>Add a New Recipe</h1>
+    <form method="POST">
+        <label>Title:</label><br>
+        <input type="text" name="title" required><br><br>
+
+        <label>Ingredients:</label><br>
+        <textarea name="ingredients" rows="4" required></textarea><br><br>
+
+        <label>Instructions:</label><br>
+        <textarea name="instructions" rows="4" required></textarea><br><br>
+
+        <button type="submit">Add Recipe</button>
+    </form>
+    <br>
+    <a href="#">Back to Recipes</a>
+</body>
+</html>
+ 
+
+{{ url_for('static', filename='style.css') }}
+{{ url_for('index') }}
